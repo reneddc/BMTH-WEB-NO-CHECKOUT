@@ -1,0 +1,188 @@
+
+
+* {
+    margin: 0 0 0 0;
+    font-weight: normal;
+    font-family: "Woodford Bourne Regular", sans-serif;
+}
+
+.initial-image{
+    position: relative;
+    background-image:url(./images/bmth2.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    height: 90%;
+}
+
+
+/*---------------------------Navigator / Menu------------------------------*/
+
+
+.menu {
+    overflow: hidden;
+    background-color: rgb(252, 252, 252);
+    position: sticky;
+    top: 0;
+}
+
+.menu-logo{
+    float: left;
+    padding: 8px 50px;
+}
+
+li {
+    font-size: 15px;
+    letter-spacing: 3px;
+    list-style-type: none;
+    float:right;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 25px 50px;
+}
+
+li a:hover,  .menu-logo:hover{
+    color: lavenderblush;
+    background-color: rgb(192, 53, 53);
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*--------------------songs-------------------------------------------------*/
+
+
+.music {
+    background-color: rgb(252, 252, 252);
+    padding: 40 80 40 80;
+}
+
+#new_realises, #albums{
+    padding: 40 0 40 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#new_realises{
+    border-bottom: 1px solid rgb(53, 51, 51);
+}
+
+.image-music, .goto-album{
+    padding: 0 80 0 80;
+}
+
+.description-music{
+    color: rgb(53, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items:stretch;
+    width: 500;
+    padding: 0 80 0 80;
+    letter-spacing: 3px;
+}
+
+.description-music>h1 {
+    font-size: 30px;
+}
+
+.description-music>h2 {
+    font-size: 20px;
+}
+
+.title-music>h1, .title-music, .goto-album, .listen_now-music{
+    padding: 10 0 20 0;
+}
+
+.description-music a{
+    text-decoration: none;
+    border: 1px solid rgb(53, 51, 51);
+    padding: 7px 20px;
+    color: rgb(53, 51, 51);
+}
+
+.description-music a:hover{
+    color: lavenderblush;
+    background-color: rgb(116, 29, 29);
+    border: 1px solid rgb(116, 29, 29);
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*----------------------------------Band Members-----------------------------------*/
+
+
+#members{
+    background-color: rgb(15, 14, 14);
+    color: lavenderblush;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+
+.band-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.band-members > div {
+    padding: 30 0 0 0;
+    height: 270px;
+}
+
+.title-members{
+    padding: 30 0 0 0;
+    text-align: center;
+}
+
+.container-member > img {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container-member > div {
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+    transform: translate(0%, -180px);
+    letter-spacing: 1px;
+    height: 100;
+}
+
+.container-member:hover img {
+    opacity: 0.2;
+}
+
+.container-member:hover .description-member {
+    opacity: 1;
+}
+
+.instrument{
+    font-size: 20px;
+    padding: 10 0 0 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(116, 29, 29);
+}
+
+
+/*----------------------------------Footer-----------------------------------*/
+
+
+footer {
+    background-color: rgb(5, 5, 5);
+    letter-spacing: 3px;
+    color: rgb(116, 29, 29);
+    text-align: center;
+}
+
+.copyright{
+    padding: 30 0 30 0;
+}

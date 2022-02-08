@@ -1,0 +1,173 @@
+* {
+    margin: 0 0 0 0;
+    font-weight: normal;
+    font-family: "Woodford Bourne Regular", sans-serif;
+}
+
+
+/*---------------------------Navigator / Menu------------------------------*/
+
+
+.menu {
+    overflow: hidden;
+    background-color: rgb(252, 252, 252);
+    position: sticky;
+    top: 0;
+}
+
+.menu-logo{
+    float: left;
+    padding: 8px 50px;
+}
+
+li {
+    font-size: 15px;
+    letter-spacing: 3px;
+    list-style-type: none;
+    float:right;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 25px 50px;
+}
+
+li a:hover,  .menu-logo:hover{
+    color: lavenderblush;
+    background-color: rgb(192, 53, 53);
+    transition: all 0.4s ease-in-out;
+}
+
+.active{
+    background-color: rgb(192, 53, 53);
+    color: lavenderblush;
+}
+
+
+/*--------------------album-------------------------------------------------*/
+
+
+#albums {
+    background-color: rgb(27, 27, 27);
+    padding: 40 160 20 160;
+    color: lavenderblush;
+}
+
+#albums{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album-left{
+    padding: 40 0 40 0;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid lavenderblush;
+}
+
+.album-right{
+    padding: 40 0 40 0;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid lavenderblush;
+}
+
+.First-album{
+    border-bottom: 1px solid rgb(27, 27, 27);
+}
+
+.description-album{
+    padding: 0 60 0 60;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+
+}
+
+.image-album{
+    padding: 0 60 0 60;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 400;
+    justify-content: center;
+}
+
+.title-image{
+    padding: 0 0 20 0;
+}
+
+.date-realease{
+    padding: 0 0 30 0;
+    color: rgb(211, 209, 206);
+}
+
+li{
+    color: rgb(167, 53, 53);
+}
+
+.container {
+    padding: 0 0 0 10;
+    color: lavenderblush;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+    transform:translateY(-180%);
+    letter-spacing: 2px;
+    height: 150px;
+    width: 380px;
+}
+
+.image-album:hover img {
+    opacity: 0.1;
+}
+
+.image-album:hover .container {
+    opacity: 1;
+}
+
+.title-image{
+    font-size: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    border: 1px solid rgb(99, 97, 97);
+    padding: 7px 20px;
+    color: rgb(99, 97, 97);
+}
+
+.container a:hover{
+    color: lavenderblush;
+    background-color: rgb(116, 29, 29);
+    border: 1px solid rgb(116, 29, 29);
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*----------------------------------Footer-----------------------------------*/
+
+
+footer {
+    background-color: rgb(5, 5, 5);
+    letter-spacing: 3px;
+    color: rgb(116, 29, 29);
+    text-align: center;
+}
+
+.copyright{
+    padding: 30 0 30 0;
+}

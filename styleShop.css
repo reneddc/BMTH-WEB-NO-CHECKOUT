@@ -1,0 +1,126 @@
+* {
+    margin: 0 0 0 0;
+    font-weight: normal;
+    font-family: "Woodford Bourne Regular", sans-serif;
+}
+
+
+/*---------------------------Navigator / Menu------------------------------*/
+
+
+.menu {
+    overflow: hidden;
+    background-color: rgb(252, 252, 252);
+    position: sticky;
+    top: 0;
+}
+
+.menu-logo{
+    float: left;
+    padding: 8px 50px;
+}
+
+li {
+    font-size: 15px;
+    letter-spacing: 3px;
+    list-style-type: none;
+    float:right;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 25px 50px;
+}
+
+li a:hover,  .menu-logo:hover{
+    color: lavenderblush;
+    background-color: rgb(192, 53, 53);
+    transition: all 0.4s ease-in-out;
+}
+
+.active{
+    background-color: rgb(192, 53, 53);
+    color: lavenderblush;
+}
+
+
+/*----------------------------------Products-----------------------------------*/
+
+
+#shop{
+    padding: 30 0 30 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.object{
+    /*padding: 30 30 30 30;*/
+    margin: 30 30 30 30;;
+    height: 300;
+    width: 300;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300;
+    transform: translate(0%, -300px);
+    opacity: 0;
+    letter-spacing: 3px;
+}
+
+.description > h1{
+    color: rgb(116, 29, 29);
+    padding: 10 10 10 10;
+    font-size: 28;
+}
+
+.description > h2{
+    padding: 10 0 10 0;
+    font-size: 20;
+}
+
+.description > a{
+    padding: 7 14 7 14;
+    text-decoration: none;
+    border: 1px solid rgb(99, 97, 97);
+    color: rgb(99, 97, 97);
+}
+
+.description a:hover{
+    color: lavenderblush;
+    background-color: rgb(116, 29, 29);
+    border: 1px solid rgb(116, 29, 29);
+    transition: all 0.4s ease-in-out;
+}
+
+.object:hover img {
+    opacity: 0.6;
+}
+
+.object:hover .description {
+    background-color: rgba(160, 154, 154, 0.555);
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+}
+
+/*----------------------------------Footer-----------------------------------*/
+
+
+footer {
+    background-color: rgb(5, 5, 5);
+    letter-spacing: 3px;
+    color: rgb(116, 29, 29);
+    text-align: center;
+}
+
+.copyright{
+    padding: 30 0 30 0;
+}
